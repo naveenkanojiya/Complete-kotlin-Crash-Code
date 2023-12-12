@@ -122,6 +122,11 @@ fun main() {
 
     println(finalBill(quantity,product))
 
+    val result = add(5,3)
+    evenOrOdd(12)
+    evenOrOdd(13)
+    printMassage(4)
+
 }
 fun finalBill(q:Double,price:Double): Double {
     val total = q*price
@@ -129,10 +134,22 @@ fun finalBill(q:Double,price:Double): Double {
     val finalBill = total- discount
     return finalBill
 
+}
 
+fun sum (num1:Int,num2:Int):Int{
+    val sum = num1+num2
+    return sum
+}
 
+fun evenOrOdd(num1:Int){
+    val result = if(num1 %2 == 0) "Even" else "Odd"
+    println(result)
+}
 
-
+fun printMassage(count:Int=10){ //here you can define defalut value in a parameters
+    for (i in 1..count){
+        println("Hello $i")
+    }
 }
 
 

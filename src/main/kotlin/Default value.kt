@@ -6,5 +6,4 @@ fun main() {
 fun add(num1:Int = 2,num2:Int= 2){
     println(num1+num2)
 
-
 }  
